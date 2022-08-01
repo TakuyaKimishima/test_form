@@ -1,164 +1,238 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  次の <META> 要素を、HTML の <HEAD>タグ間に追加してください。必要に応じて、charset                  -->
-<!--  パラメータを変更して、HTML ページの文字コードを指定してください。                                     -->
-<!--  ----------------------------------------------------------------------  -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>モデルハウス来場</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-
-<!--  ----------------------------------------------------------------------  -->
-<!--  次の <FORM> 要素をページに追加してください。                                              -->
-<!--  ----------------------------------------------------------------------  -->
-
-<!-- pardot POST_URL https://go.demo.pardot.com/l/431273/2022-06-27/l2g -->
-<!-- Case POST_URL https://d5i000003npwdeak--proto.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8 -->
-<form action="https://go.demo.pardot.com/l/431273/2022-06-27/l2g" method="POST">
-
-<input type=hidden name="orgid" value="00DN0000000cDLb">
-<input type=hidden name="retURL" value="https://www.terrasky.co.jp/">
-<!-- pardot POST_URL 	https://go.demo.pardot.com/l/431273/2022-06-27/l2g -->
-<!--  ----------------------------------------------------------------------  -->
-<!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
-<!-- 
-<input type="hidden" name="debug" value=1>
-<input type="hidden" name="debugEmail" value="yuehara@terrasky.co.jp">
--->
-<!--  ----------------------------------------------------------------------  -->
+<body>
+    <div class="box_con08">
+        <form action="https://go.demo.pardot.com/l/431273/2022-08-01/mmn" method="POST">
+            <input type="hidden" name="orgid" value="00DN0000000cDLb">
+            <input type="hidden" name="retURL" value="https://www.mitsuihome.co.jp/">
+            <input type="hidden" id="00NN000000G7McE" maxlength="255" name="00NN000000G7McE" size="20" />
+            <input type="hideen" id="subject" maxlength="80" name="subject" value="モデルハウス来場"/>
 
 
-ご相談デスク 敷地調査地 郵便番号:<input  id="00NN000000Fj4MO" maxlength="255" name="00NN000000Fj4MO" size="20" type="text" /><br>
-ご相談デスク 敷地調査地 都道府県:<input  id="00NN000000Fj4MP" maxlength="255" name="00NN000000Fj4MP" size="20" type="text" /><br>
-<!--	デフォルト項目: 市区郡	-->
-<!--	デフォルト項目: 町村・地名・番地	-->
-<!--	デフォルト項目: 建物名・部屋番号等	-->
-<!--	デフォルト項目: 姓	-->
-<!--	デフォルト項目: 名	-->
-<!--	デフォルト項目: 電話番号	-->
-<label for="email">メール</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-<!--	カスタム項目: 年齢	-->
-<!--	カスタム項目: 土地購入・その他の予算	-->
+            <ul class="formTable">
+                <li>
+                    <p class="title"><em>お名前<span>必須</span></em></p>
+                    <div class="box_det">
+                        <input  id="name" maxlength="80" name="name" size="20" type="text" class="wide" />
+                    </div>    
+                </li>
+                <li>
+                    <p class="title"><em>電話番号（半角）<span>必須</span></em></p>
+                    <div class="box_det">
+                        </label><input  id="phone" maxlength="40" name="phone" size="20" type="text" class="wide" />
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>メール（半角）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <input  id="email" maxlength="80" name="email" size="20" type="text" class="wide" />
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>ご計画地（有/無）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6Szf" name="00NN000000G6Szf" title="ご計画地（有/無）">
+                            <option value="">--なし--</option>
+                            <option value="有">有</option>
+                            <option value="無">無</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>ご計画地<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6Szh" name="00NN000000G6Szh" title="ご計画地">
+                            <option value="">--なし--</option>
+                            <option value="現住所">現住所</option>
+                            <option value="別の所有地">別の所有地</option>
+                            <option value="その他">その他</option>
+                            <option value="検討地有り">検討地有り</option>
+                            <option value="具体的に探している">具体的に探している</option>
+                            <option value="まだ探していない">まだ探していない</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>ご計画地（所在地）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <input  id="00NN000000G6Szl" maxlength="255" name="00NN000000G6Szl" size="20" type="text" class="wide" />
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>お客様の希望エリア<span>必須</span></em></p>
+                    <div class="box_det">
+                        <input  id="00NN000000G6TPa" maxlength="255" name="00NN000000G6TPa" size="20" type="text" class="wide" />
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>建築予定時期<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6Szg" name="00NN000000G6Szg" title="建築予定時期">
+                            <option value="">--なし--</option>
+                            <option value="できるだけ早く">できるだけ早く</option>
+                            <option value="1年以内に入居">1年以内に入居</option>
+                            <option value="2年以内に入居">2年以内に入居</option>
+                            <option value="それ以降">それ以降</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>建築予定時期（その他）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <textarea  id="00NN000000FfvwC" name="00NN000000FfvwC" rows="5" type="text" wrap="soft"></textarea>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>建築動機<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6Szk" name="00NN000000G6Szk" title="建築動機">
+                            <option value="">--なし--</option>
+                            <option value="今の家賃がもったいない">今の家賃がもったいない</option>
+                            <option value="家が古くなった">家が古くなった</option>
+                            <option value="家が手狭になってきた">家が手狭になってきた</option>
+                            <option value="ご家族の成長・構成変化">ご家族の成長・構成変化</option>
+                            <option value="税制制度を利用したい">税制制度を利用したい</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>建築動機(その他）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <input  id="00NN000000G6Szj" maxlength="255" name="00NN000000G6Szj" size="20" type="text" class="wide" />
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>現在のお住まい<span>必須</span></span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6UhI" name="00NN000000G6UhI" title="現在のお住まい">
+                            <option value="">--なし--</option>
+                            <option value="戸建て住宅（ご所有）">戸建て住宅（ご所有）</option>
+                            <option value="マンション（ご所有）">マンション（ご所有）</option>
+                            <option value="戸建て住宅（賃貸）">戸建て住宅（賃貸）</option>
+                            <option value="賃貸マンション・アパート">賃貸マンション・アパート</option>
+                            <option value="社宅・官舎">社宅・官舎</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>現在のお住まい（その他）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <input  id="00NN000000FszlO" maxlength="80" name="00NN000000FszlO" size="20" type="text" class="wide" />
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>予算（土地代含む）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6Szm" name="00NN000000G6Szm" title="予算（土地代含む）">
+                            <option value="">--なし--</option>
+                            <option value="～3,000万円">～3,000万円</option>
+                            <option value="～4,000万円">～4,000万円</option>
+                            <option value="～5,000万円">～5,000万円</option>
+                            <option value="～6,000万円">～6,000万円</option>
+                            <option value="～7,000万円">～7,000万円</option>
+                            <option value="～8,000万円">～8,000万円</option>
+                            <option value="～9,000万円">～9,000万円</option>
+                            <option value="～1億円">～1億円</option>
+                            <option value="～2億円">～2億円</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>建物計画<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6Szi" name="00NN000000G6Szi" title="建物計画">
+                            <option value="">--なし--</option>
+                            <option value="単世帯">単世帯</option>
+                            <option value="二世帯">二世帯</option>
+                            <option value="賃貸（土地活用）">賃貸（土地活用）</option>
+                            <option value="別荘">別荘</option>
+                            <option value="リフォーム">リフォーム</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>建物計画（その他）<span>必須</span></em></p>
+                    <div class="box_det">
+                        <textarea  id="00NN000000FvJ0s" name="00NN000000FvJ0s" rows="5" type="text" wrap="soft"></textarea>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>土地情報を希望されますか？<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000FfvwZ" name="00NN000000FfvwZ" title="土地情報を希望されますか？">
+                            <option value="">--なし--</option>
+                            <option value="希望する">希望する</option>
+                            <option value="希望しない">希望しない</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <p class="title"><em>重要視ポイント<span>必須</span></em></p>
+                    <div class="box_det">
+                        <select  id="00NN000000G6Sze" multiple="multiple" name="00NN000000G6Sze" title="重要視ポイント">
+                            <option value="構造・後方・性能">構造・後方・性能</option>
+                            <option value="間取り">間取り</option>
+                            <option value="インテリア">インテリア</option>
+                            <option value="外観">外観</option>
+                            <option value="価格（建築費用）">価格（建築費用）</option>
+                            <option value="保証、メンテナンス">保証、メンテナンス</option>
+                            </select><br>
+                        </select>
+                    </div>
+                </li>
 
-請求元大分類:<select  id="00NN000000Fgsjg" name="00NN000000Fgsjg" title="請求元大分類"><option value="">--なし--</option><option value="インターネット">インターネット</option>
-<option value="雑誌">雑誌</option>
-<option value="新聞">新聞</option>
-<option value="電話">電話</option>
-<option value="直来場">直来場</option>
-<option value="その他">その他</option>
-</select><br>
-請求元中分類:<select  id="00NN000000Fgsjh" name="00NN000000Fgsjh" title="請求元中分類"><option value="">--なし--</option><option value="ホームページ（紙カタログ）">ホームページ（紙カタログ）</option>
-  <option value="ホームページ（WEBカタログ）">ホームページ（WEBカタログ）</option>
-  <option value="ポータルサイト（HOME4U)">ポータルサイト（HOME4U)</option>
-  <option value="ポータルサイト（HOMES）">ポータルサイト（HOMES）</option>
-  <option value="ポータルサイト（アイレップ：総合住宅展示場）">ポータルサイト（アイレップ：総合住宅展示場）</option>
-  <option value="ポータルサイト（ウェブクルー：持ち家計画）">ポータルサイト（ウェブクルー：持ち家計画）</option>
-  <option value="ポータルサイト（エムスリー）">ポータルサイト（エムスリー）</option>
-  <option value="ポータルサイト（クラス：Klass）">ポータルサイト（クラス：Klass）</option>
-  <option value="ポータルサイト（ずっとe家）">ポータルサイト（ずっとe家）</option>
-  <option value="ポータルサイト（ダーウィン）">ポータルサイト（ダーウィン）</option>
-  <option value="ポータルサイト（タウンライフ）">ポータルサイト（タウンライフ）</option>
-  <option value="ポータルサイト（タグル：Tagle）">ポータルサイト（タグル：Tagle）</option>
-  <option value="ポータルサイト（はじめて家を建てる）">ポータルサイト（はじめて家を建てる）</option>
-  <option value="ポータルサイト（リクルート：ハウジングナビ）">ポータルサイト（リクルート：ハウジングナビ）</option>
-  <option value="その他インターネット">その他インターネット</option>
-  <option value="「親と実家」を考える本">「親と実家」を考える本</option>
-  <option value="AGORA">AGORA</option>
-  <option value="Happy-Note">Happy-Note</option>
-  <option value="I&#39;m home">I&#39;m home</option>
-  <option value="MB SENSE">MB SENSE</option>
-  <option value="MOMENTUM">MOMENTUM</option>
-  <option value="MYHOME+">MYHOME+</option>
-  <option value="SIGNATURE">SIGNATURE</option>
-  <option value="あなたの土地を賢く活かす本">あなたの土地を賢く活かす本</option>
-  <option value="オーナーズスタイル">オーナーズスタイル</option>
-  <option value="クレディ">クレディ</option>
-  <option value="ナイルスナイル">ナイルスナイル</option>
-  <option value="プレジデント">プレジデント</option>
-  <option value="ミセス">ミセス</option>
-  <option value="ヤナセライフ">ヤナセライフ</option>
-  <option value="家庭画報">家庭画報</option>
-  <option value="帰国便利帳">帰国便利帳</option>
-  <option value="月刊ハウジング">月刊ハウジング</option>
-  <option value="実家の教科書">実家の教科書</option>
-  <option value="週刊ダイヤモンド">週刊ダイヤモンド</option>
-  <option value="週刊ダイヤモンドセレクト">週刊ダイヤモンドセレクト</option>
-  <option value="週刊文春">週刊文春</option>
-  <option value="住まいの実例セレクション">住まいの実例セレクション</option>
-  <option value="住まいの設計">住まいの設計</option>
-  <option value="大人の家">大人の家</option>
-  <option value="注文住宅-ﾌﾘｰﾍﾟｰﾊﾟｰ">注文住宅-ﾌﾘｰﾍﾟｰﾊﾟｰ</option>
-  <option value="憧れの輸入住宅を建てる">憧れの輸入住宅を建てる</option>
-  <option value="日経ビジネス">日経ビジネス</option>
-  <option value="文藝春秋">文藝春秋</option>
-  <option value="その他雑誌">その他雑誌</option>
-  <option value="朝日新聞">朝日新聞</option>
-  <option value="日経新聞">日経新聞</option>
-  <option value="読売新聞">読売新聞</option>
-  <option value="その他新聞">その他新聞</option>
-  <option value="ハウジング">ハウジング</option>
-  </select><br>
-請求元小分類:<input  id="00NN000000FfvwV" maxlength="100" name="00NN000000FfvwV" size="20" type="text" /><br>
-
-<!--	カスタム項目: 請求カタログコード（1冊目）	カタログ1（入力）？	-->
-<!--	カスタム項目: 請求カタログコード（2冊目）	カタログ2（入力）？	-->
-<!--	カスタム項目: 請求カタログコード（3冊目）	カタログ3（入力）？	-->
-カタログ1（入力）:<input  id="00NN000000FgsjP" maxlength="10" name="00NN000000FgsjP" size="20" type="text" /><br>
-カタログ2（入力）:<input  id="00NN000000FgsjR" maxlength="10" name="00NN000000FgsjR" size="20" type="text" /><br>
-カタログ3（入力）:<input  id="00NN000000FgsjT" maxlength="10" name="00NN000000FgsjT" size="20" type="text" /><br>
-
-カタログ4（入力）:<input  id="00NN000000FgsjV" maxlength="10" name="00NN000000FgsjV" size="20" type="text" /><br>
-カタログ5（入力）:<input  id="00NN000000FgsjX" maxlength="10" name="00NN000000FgsjX" size="20" type="text" /><br>
-カタログ6（入力）:<input  id="00NN000000FgsjZ" maxlength="10" name="00NN000000FgsjZ" size="20" type="text" /><br>
-カタログ7（入力）:<input  id="00NN000000Fgsjb" maxlength="10" name="00NN000000Fgsjb" size="20" type="text" /><br>
-カタログ8（入力）:<input  id="00NN000000Fgsjd" maxlength="10" name="00NN000000Fgsjd" size="20" type="text" /><br>
-カタログ9（入力）:<input  id="00NN000000Fgsjf" maxlength="10" name="00NN000000Fgsjf" size="20" type="text" /><br>
-カタログ10（入力）:<input  id="00NN000000FgsjN" maxlength="10" name="00NN000000FgsjN" size="20" type="text" /><br>
-
-
-性別:<input  id="00NN000000Fj5sd" maxlength="10" name="00NN000000Fj5sd" size="20" type="text" /><br>
-<!-- 職業 -->
-<!-- 資料請求情報源 -->
-資料請求ID:<input  id="00NN000000FfvwF" maxlength="255" name="00NN000000FfvwF" size="20" type="text" /><br>
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 新聞広告	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 雑誌広告	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 工事中看板	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 街頭看板	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 ラジオCM	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 ホームページ	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 チラシ	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 ダイレクトメール	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 Web広告	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 TVCM	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 Instagram	-->
-<!--	カスタム項目: 今までにご覧になった三井ホームの広告 Facebook	-->
-<!--	カスタム項目: 現在のお住まいについて	-->
-<!--	カスタム項目: 建築予定時期その他	-->
-建築予定時期（記入）:<textarea  id="00NN000000FfvwC" name="00NN000000FfvwC" rows="5" type="text" wrap="soft"></textarea><br>
-<!--	カスタム項目: 建築予算	-->
-
-計画予定地の所在地:<textarea  id="00NN000000FfvwT" name="00NN000000FfvwT" rows="5" type="text" wrap="soft"></textarea><br>
-<!--	カスタム項目: 計画予定地の所在地	-->
-<!--	カスタム項目: 計画予定地の広さ	-->
-<!--	カスタム項目: 計画予定地の希望の方面	-->
-計画予定地の広さ・計画予定地の希望の方面・計画予定地の希望の広さ:<textarea  id="00NN000000FfvwS" name="00NN000000FfvwS" rows="5" type="text" wrap="soft"></textarea><br>
-<!--	カスタム項目: 計画予定地について、今後土地情報提供を希望するか	-->
-<!--	カスタム項目: 計画予定地	-->
-<!--	カスタム項目: 計画内容	-->
-
-<!--	カスタム項目: 携帯電話	-->
-会社サイト名:<input  id="00NN000000FfvwB" maxlength="255" name="00NN000000FfvwB" size="20" type="text" /><br>
-<!--	カスタム項目: ふりがな（名）	-->
-<!--	カスタム項目: ふりがな（姓）	-->
-アンケートフォーム通過識別日時:<input  id="00NN000000Fj5sU" maxlength="255" name="00NN000000Fj5sU" size="20" type="text" /><br>
-<!--	カスタム項目: ご相談・お問い合わせ	-->
-
-
-<!-- uehara 追加項目 -->
-<label for="email">姓</label><input  id="lastname" maxlength="80" name="lastname" size="20" type="text" /><br>
-<label for="email">名</label><input  id="firstname" maxlength="80" name="firstname" size="20" type="text" /><br>
-<label for="email">会社名</label><input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
-<label for="email">情報源</label><input  id="LeadSource" maxlength="80" name="LeadSource" size="20" type="text" value="インターネット問合せ" /><br>
-
-<!-- END -->
-
-<input type="submit" name="submit">
-
-</form>
+                <li>
+                    <p class="title"><em>知りたい情報<span>必須</span></em></p>
+                    <div class="container">
+                        <input  type="checkbox" id="00NN000000G6Ugy"  name="00NN000000G6Ugy"value="最新土地情報">最新土地情報 </input>
+                        <input  type="checkbox" id="00NN000000G6Ugy"  name="00NN000000G6Ugy"  value="自分に合った実例">自分に合った実例</input>
+                        <input  type="checkbox" id="00NN000000G6Ugy"  name="00NN000000G6Ugy"  value="構造現場">構造現場</input>
+                        <input  type="checkbox" id="00NN000000G6Ugy"  name="00NN000000G6Ugy"  value="間取り">間取り</input>
+                        <input  type="checkbox" id="00NN000000G6Ugy"  name="00NN000000G6Ugy"  value="税制・資金計画">税制・資金計画</input>
+                        <input  type="checkbox" id="00NN000000G6Ugy"  name="00NN000000G6Ugy"  value="キャンペーン情報">キャンペーン情報</input>
+                        <input  type="checkbox" id="00NN000000G6Ugy"  name="00NN000000G6Ugy"  value="その他">その他</input>
+                    </div>
+                </li>
+            </ul>
+            <div class="con_pri">
+                <div class="box_pri">
+                    <div class="box_tori">
+                        <h4>プライバシー</h4>
+                        <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                    </div>
+                    <div class="box_num">
+                        <h4>プライバシー</h4>
+                        <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                    </div>
+                    <div class="box_num">
+                        <h4>プライバシー</h4>
+                        <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                    </div>
+                    <div class="box_num">
+                        <h4>プライバシー</h4>
+                        <p class="txt">プライバシープライバシープライバシープライバシープライバシープライバシープライバシープライバシー</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_check">
+                <label>
+                    <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span class="check">プライバシーポリシーに同意する</span>
+                </label>
+            </div>
+            <p class="btn">
+                <span><input type="submit" value="　 送信 　" /></span>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
