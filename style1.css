@@ -173,6 +173,19 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
+
+  .box_con08 form ul li .short {
+    width: 35%;
+    height: 3em;
+    padding: .5em;
+    border: none;
+    outline: none;
+    background: transparent;
+    background: #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
   .box_con08 form ul li textarea {
     height: 10em;
   }
