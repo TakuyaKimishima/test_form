@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ページ１</title>
+</head>
+<body>
+<h2>ページ１</h2>
+<button onclick="goToPage2()">ページ２へ</button>
+
+<script>
+function goToPage2() {
+  window.location.href = "page2.html";
+}
+</script>
+<script type="text/javascript">
+piAId = '541443';
+piCId = '276684';
+piHostname = 'pi.demo.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+</body>
+</html>
