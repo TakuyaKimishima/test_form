@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>最後の文字チェック</title>
+</head>
+<body>
+<h2>最後の文字チェック</h2>
+<form id="textForm">
+  <label for="textInput">テキストを入力してください:</label><br>
+  <input type="text" id="textInput" name="textInput"><br>
+  <button type="button" onclick="checkLastCharacter()">チェック</button>
+</form>
+<div id="result"></div>
+
+<script>
+function checkLastCharacter() {
+  var inputText = document.getElementById("textInput").value;
+  var regex = new RegExp('.(都|道|府|県|海外)$');
+  var result = regex.test(inputText);
+  var resultDiv = document.getElementById("result");
+  if (result) {
+    resultDiv.innerHTML = "<p>最後の文字が条件に一致しました。</p>";
+  } else {
+    resultDiv.innerHTML = "<p>最後の文字が条件に一致しませんでした。</p>";
+  }
+}
+</script>
+<script type="text/javascript">
+piAId = '541443';
+piCId = '208836';
+piHostname = 'pi.demo.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+</body>
+</html>
